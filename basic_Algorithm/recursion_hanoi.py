@@ -5,11 +5,12 @@ def hanoi(n, start, mid, end):
         print(f'disk {n} from {start} to {mid}')
         return
     else:
-        hanoi(n-1, start, end, mid) # 재귀 함수 실행 N이 1이 될때까지 N이 1이라면 return으로 재귀 종료 
+        hanoi(n-1, start, end, mid) # 재귀 2가 들어옴
         print(f'disk {n} move {start} > {mid}') # 재귀된 2가 여기서 출력됨
-        hanoi(n-1, end, mid, start) # 다시 재귀 하여 끝에있는 값을 중간으로 이동 모든 값이 이동하여 return 이 나오면 종료
+        hanoi(n-1, end, mid, start) # 다시 재귀 하여 끝에있는 값을 중간으로 이동
 
 hanoi(3, 1, 2, 3)
+
 
 
 
