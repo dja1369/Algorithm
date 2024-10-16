@@ -7,7 +7,6 @@ for _ in range(a, b+1):
     print(result, end=" ")
     if result % 2 != 0:
         result *= 2  
-        print(result, end=" ")  
+
     else:
         result += 3
-        print(result, end=" ")
